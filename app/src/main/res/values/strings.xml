@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PunkApp</string>
+
+    <string name="description_header">Description</string>
+    <string name="information_header">Information</string>
+    <string name="no_network_text">Sorry cannot load data please check network connection</string>
+    <string name="beer_description">Beer</string>
+    <string name="no_data">Sorry no beers today 😓</string>
+    <string name="punk_beers_txt">Punk Beers</string>
+
+    <string name="abv_txt">ABV - %1$s</string>
+    <string name="detail_info_txt"><b>Malts: </b>%1$s \n\n<b>Hops:</b> %2$s \n\n<b>Food Parings:</b> %3$s</string>
+    <string name="beer_image">beer image</string>
+</resources>
