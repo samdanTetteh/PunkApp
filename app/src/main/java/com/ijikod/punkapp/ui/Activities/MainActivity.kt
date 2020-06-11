@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), Inspector {
     }
 
     override fun setTitle(title: String) {
-        supportActionBar?.title = getString(R.string.punk_beers_txt)
+        supportActionBar?.title = title
     }
 
     override fun getNavigation(): NavController {
