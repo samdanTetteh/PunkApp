@@ -21,6 +21,7 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 1. [Android Studio 3.0 and above](https://developer.android.com/studio)
 2. [Android buildToolsVersion and 29.0.3 above](https://developer.android.com/studio/releases/build-tools)
 3. Android minSdkVersion 19
+4. Kotlin version 1.3.*
 
 ### Features
 
@@ -35,8 +36,6 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 * Display list with [RecycleView](https://codelabs.developers.google.com/codelabs/android-training-create-recycler-view/index.html#0) and data binding with [Paging Library](https://codelabs.developers.google.com/codelabs/android-paging/#0).
 
 
-### Testing
-*  
 
 
 
