@@ -12,6 +12,7 @@ import com.ijikod.punkapp.Model.BeerListResults
 class BeersListViewModel(private val repository : PunkRepository) : ViewModel() {
 
     private val beerLiveData = MutableLiveData<BeerListResults>()
+    val selectedBeer = MutableLiveData<Beer>()
 
     var beers: LiveData<PagedList<Beer>>  = Transformations.switchMap(beerLiveData){
         repository.data
