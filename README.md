@@ -44,7 +44,16 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 
 ### Screenshots
 
-![](https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032244.png)
+<table>
+  <tr>
+    <td>First Screen Page</td>
+     <td>Holiday Mention</td>
+     <td>Present day in purple and selected day in pink</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032244.png" width=270 height=480></td>
+  </tr>
+ </table>
 
 
 
