@@ -1,8 +1,6 @@
 package com.ijikod.punkapp.ui
 
-import android.content.ClipData.Item
 import android.view.ViewGroup
-import androidx.paging.AsyncPagedListDiffer
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView

@@ -2,12 +2,9 @@ package com.ijikod.punkapp.ui.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentFactory
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.ijikod.punkapp.R
-import com.ijikod.punkapp.ui.Fragments.DetailsFragment
-import com.ijikod.punkapp.ui.Fragments.ListFragment
 import com.ijikod.punkapp.ui.Fragments.ListFragmentFactory
 
 class MainActivity : AppCompatActivity(), Inspector {
