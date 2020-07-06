@@ -46,13 +46,16 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 
 <table>
   <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
+    <td>Splash Screen</td>
+     <td>List Screen with paging</td>
+     <td>Details Screen</td>
   </tr>
   <tr>
     <td><img src="https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032244.png" width=270 height=480></td>
+    <td><img src="https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032022.png" width=270 height=480></td>
+    <td><img src="https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032232.png" width=270 height=480></td>
   </tr>
+ 
  </table>
 
 
