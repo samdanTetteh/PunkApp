@@ -18,8 +18,8 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
  
 ### Requirements
 
-1. [Android Studio 3.0 and above](https://developer.android.com/studio)
-2. [Android buildToolsVersion and 29.0.3 above](https://developer.android.com/studio/releases/build-tools)
+1. [Android Studio 3.0](https://developer.android.com/studio) and above
+2. [Android buildToolsVersion 29.0.3](https://developer.android.com/studio/releases/build-tools) and above 
 3. Android minSdkVersion 19
 4. Kotlin version 1.3.*
 
@@ -35,6 +35,16 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 * Managing of asynchronous calls using [Kotlin Coroutines](https://codelabs.developers.google.com/codelabs/kotlin-coroutines/#0).
 * Display list with [RecycleView](https://codelabs.developers.google.com/codelabs/android-training-create-recycler-view/index.html#0) and data binding with [Paging Library](https://codelabs.developers.google.com/codelabs/android-paging/#0).
 
+
+### Testing
+* Android UI tests with [Espresso](https://developer.android.com/training/testing/espresso)
+* [Testing Room DAO classes](https://medium.com/exploring-android/android-architecture-components-testing-your-room-dao-classes-e06e1c9a1535)
+* Local Unit tests with [Mokito](https://developer.android.com/training/testing/unit-testing/local-unit-tests) and [Robolectric](http://robolectric.org)
+
+
+### Screenshots
+
+![]("Screenshots/Screenshot_1594032244.png")
 
 
 
