@@ -9,21 +9,22 @@ import com.ijikod.punkapp.R
 
 
 
-    //Data binding function to load image in xml file
-    @BindingAdapter("imageUrl")
+    /**
+     *  A [BindingAdapter] that uses the Glide library to load the beer image.
+     */
+    @BindingAdapter("app:imageUrl")
     fun loadImage(imageView: ImageView, image : String){
         Glide.with(imageView.context).load(image).placeholder(R.drawable.craft_beer_clip).into(imageView)
     }
 
 
-    /* Data binding function to format ABV text in xml file */
     @BindingAdapter("abv")
     fun setAbv(textView: TextView, abv: String){
         textView.text =  String.format(textView.context.resources.getString(R.string.abv_txt), abv)
     }
 
 
-    //Data binding function to format beer details in xml file
+
     @BindingAdapter( "malt")
     fun setValues(textView: TextView, beer: Beer){
         val maltIngredients =  beer.ingredients?.malt?.joinToString {
