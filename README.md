@@ -44,7 +44,7 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 
 ### Screenshots
 
-![]("https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032244.png")
+![screen]("https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032244.png")
 
 
 
