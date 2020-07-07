@@ -9,7 +9,7 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
  and **PAGING**. There are alot more *JETPACK* libraries which are not in use in this project
  mostly because of the project requirements but you can find all here <https://developer.android.com/jetpack>
  
- ## Punk Api Documentation
+## Punk Api Documentation
 [Punk Api V2 Documentation](https://punkapi.com/documentation/v2)
  
 ### Requirements
@@ -18,7 +18,7 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 3. Android minSdkVersion 19
 4. Kotlin version 1.3.*
 
-### Features
+## Features
 * Implementation of android [MVVM Architecture Pattern](https://developer.android.com/jetpack/guide).
 * Data single source of truth implementation and google suggested practice for code separation using
  [Repository Architecture](https://codelabs.developers.google.com/codelabs/android-training-livedata-viewmodel/index.html#7).
@@ -29,12 +29,12 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 * Managing of asynchronous calls using [Kotlin Coroutines](https://codelabs.developers.google.com/codelabs/kotlin-coroutines/#0).
 * Display list with [RecycleView](https://codelabs.developers.google.com/codelabs/android-training-create-recycler-view/index.html#0) and data binding with [Paging Library](https://codelabs.developers.google.com/codelabs/android-paging/#0).
 
-### Testing
+## Testing
 * Android UI tests with [Espresso](https://developer.android.com/training/testing/espresso)
 * [Testing Room DAO classes](https://medium.com/exploring-android/android-architecture-components-testing-your-room-dao-classes-e06e1c9a1535)
 * Local Unit tests with [Mokito](https://developer.android.com/training/testing/unit-testing/local-unit-tests) and [Robolectric](http://robolectric.org)
 
-### Screenshots
+## Screenshots
 <table>
   <tr>
     <td>Splash Screen</td>
