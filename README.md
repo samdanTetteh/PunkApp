@@ -13,10 +13,10 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
 [Punk Api V2 Documentation](https://punkapi.com/documentation/v2)
  
 ## Requirements
-1.[Android Studio 3.0](https://developer.android.com/studio) and above.
-2.[Android buildToolsVersion 29.0.3](https://developer.android.com/studio/releases/build-tools) and above.
-3. Android minSdkVersion 19.
-4. Kotlin version 1.3.*.
+- [Android Studio 3.0](https://developer.android.com/studio) and above.
+- [Android buildToolsVersion 29.0.3](https://developer.android.com/studio/releases/build-tools) and above.
+- Android minSdkVersion 19.
+- Kotlin version 1.3.*.
 
 ## Features
  * Implementation of android [MVVM Architecture Pattern](https://developer.android.com/jetpack/guide).
