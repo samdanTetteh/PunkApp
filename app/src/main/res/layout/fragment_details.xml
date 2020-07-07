@@ -31,7 +31,7 @@
             android:background="@drawable/image_border"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            imageUrl="@{vm.selectedBeer.imageURL}"
+            app:imageUrl="@{vm.selectedBeer.imageURL}"
             android:contentDescription="@string/beer_image" />
 
         <TextView

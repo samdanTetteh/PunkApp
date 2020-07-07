@@ -13,19 +13,28 @@ import com.ijikod.punkapp.R
      *  A [BindingAdapter] that uses the Glide library to load the beer image.
      */
     @BindingAdapter("app:imageUrl")
-    fun loadImage(imageView: ImageView, image : String){
-        Glide.with(imageView.context).load(image).placeholder(R.drawable.craft_beer_clip).into(imageView)
+    fun loadImage(imageView: ImageView, image : String?){
+        image.let {
+            Glide.with(imageView.context).load(it).placeholder(R.drawable.craft_beer_clip).into(imageView)
+        }
+
     }
 
 
-    @BindingAdapter("abv")
+/**
+ *  A [BindingAdapter] that formats beer [abv] text.
+ */
+    @BindingAdapter("app:abv")
     fun setAbv(textView: TextView, abv: String){
         textView.text =  String.format(textView.context.resources.getString(R.string.abv_txt), abv)
     }
 
 
 
-    @BindingAdapter( "malt")
+/**
+ *  A [BindingAdapter] that formats [beer] data to text.
+ */
+    @BindingAdapter( "details")
     fun setValues(textView: TextView, beer: Beer){
         val maltIngredients =  beer.ingredients?.malt?.joinToString {
                 it.name.toString()
