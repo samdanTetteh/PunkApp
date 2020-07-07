@@ -44,20 +44,4 @@ This project makes use of the **MVVM** architecture model with androids **JETPAC
     <td><img src="https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032022.png" width=250 height=480></td>
     <td><img src="https://github.com/samdanTetteh/PunkApp/blob/master/Screenshots/Screenshot_1594032232.png" width=250 height=480></td>
   </tr>
- 
  </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
