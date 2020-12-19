@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 @Entity(tableName = "Beers")
-data class Beer (
+data class Beer(
     @PrimaryKey()
     val id: Long,
     val name: String?,
@@ -46,21 +46,21 @@ data class Beer (
 ) : Parcelable
 
 @Parcelize
-data class BoilVolume (
+data class BoilVolume(
     val value: Double?,
     val unit: String?
 ) : Parcelable
 
 
 @Parcelize
-data class Ingredients (
+data class Ingredients(
     val malt: List<Malt>?,
     val hops: List<Hop>?,
     val yeast: String?
 ) : Parcelable
 
 @Parcelize
-data class Hop (
+data class Hop(
     val name: String?,
     @Embedded(prefix = "hop_")
     val amount: BoilVolume?,
@@ -69,14 +69,14 @@ data class Hop (
 ) : Parcelable
 
 @Parcelize
-data class Malt (
+data class Malt(
     val name: String?,
     @Embedded(prefix = "malt_")
     val amount: BoilVolume?
 ) : Parcelable
 
 @Parcelize
-data class Method (
+data class Method(
     @field:Json(name = "mash_temp")
     val mashTemp: List<MashTemp>?,
     @Embedded
@@ -85,13 +85,13 @@ data class Method (
 ) : Parcelable
 
 @Parcelize
-data class Fermentation (
+data class Fermentation(
     @Embedded(prefix = "fermentation_")
     val temp: BoilVolume?
 ) : Parcelable
 
 @Parcelize
-data class MashTemp (
+data class MashTemp(
     @Embedded(prefix = "mash_temp_")
     val temp: BoilVolume?,
     val duration: Long?

@@ -19,21 +19,21 @@ import com.ijikod.punkapp.ui.BeersListViewModel
  */
 class DetailsFragment(val inspector: Inspector) : Fragment() {
 
-    lateinit var viewModel : BeersListViewModel
+    lateinit var viewModel: BeersListViewModel
 
-    lateinit var detailsImg : ImageView
-    lateinit var name : TextView
-    lateinit var year : TextView
-    lateinit var abv : TextView
-    lateinit var infoTxt : TextView
-    lateinit var descTxt : TextView
+    lateinit var detailsImg: ImageView
+    lateinit var name: TextView
+    lateinit var year: TextView
+    lateinit var abv: TextView
+    lateinit var infoTxt: TextView
+    lateinit var descTxt: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        viewModel = ViewModelProviders.of(this, PunkApplication.provideViewModelFactory(requireContext()))
-            .get(BeersListViewModel::class.java)
-
+        viewModel =
+            ViewModelProviders.of(this, PunkApplication.provideViewModelFactory(requireContext()))
+                .get(BeersListViewModel::class.java)
 
 
     }
@@ -44,7 +44,7 @@ class DetailsFragment(val inspector: Inspector) : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding =   FragmentDetailsBinding.inflate(inflater, container, false)
+        val binding = FragmentDetailsBinding.inflate(inflater, container, false)
 
         val beer = arguments?.let { DetailsFragmentArgs.fromBundle(it).beer }
 
@@ -61,8 +61,8 @@ class DetailsFragment(val inspector: Inspector) : Fragment() {
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item?.itemId == android.R.id.home){
-           inspector.getNavigation().navigateUp()
+        if (item.itemId == android.R.id.home) {
+            inspector.getNavigation().navigateUp()
         }
 
         return super.onOptionsItemSelected(item)

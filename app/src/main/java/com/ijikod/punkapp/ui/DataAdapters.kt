@@ -34,7 +34,7 @@ import com.ijikod.punkapp.R
 /**
  *  A [BindingAdapter] that formats [beer] data to text.
  */
-    @BindingAdapter( "details")
+    @BindingAdapter( "app:details")
     fun setValues(textView: TextView, beer: Beer){
         val maltIngredients =  beer.ingredients?.malt?.joinToString {
                 it.name.toString()
