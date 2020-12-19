@@ -3,41 +3,34 @@ package com.ijikod.punkapp.ui.Activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import com.ijikod.punkapp.R
-import com.ijikod.punkapp.ui.Fragments.ListFragmentFactory
+import com.ijikod.punkapp.ui.Fragments.FragmentFactory
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), Inspector {
+class MainActivity : AppCompatActivity() {
+
+    private val navHostFragment by lazy {
+        supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+    }
+
+    private val appBarConfiguration: AppBarConfiguration by lazy {
+        AppBarConfiguration(navHostFragment.navController.graph)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportFragmentManager.fragmentFactory =
-            ListFragmentFactory(this)
+        supportFragmentManager.fragmentFactory = FragmentFactory()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        setSupportActionBar(toolbar)
+
+        // setup toolbar with navigation component
+        toolbar.setupWithNavController(navHostFragment.navController, appBarConfiguration)
     }
 
-    override fun setActionBarUpVisibility(enabled: Boolean) {
-        supportActionBar?.setDisplayHomeAsUpEnabled(enabled)
-    }
-
-    override fun setTitle(title: String) {
-        supportActionBar?.title = title
-    }
-
-    override fun getNavigation(): NavController {
-       return  Navigation.findNavController(this, R.id.nav_host)
-    }
-
-
-}
-
-interface Inspector {
-
-    fun setActionBarUpVisibility(enabled : Boolean)
-
-    fun setTitle(title : String)
-
-    fun getNavigation(): NavController
 }
 
 

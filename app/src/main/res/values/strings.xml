@@ -11,4 +11,5 @@
     <string name="abv_txt">ABV - %1$s</string>
     <string name="detail_info_txt"><b>Malts: </b>%1$s \n\n<b>Hops:</b> %2$s \n\n<b>Food Parings:</b> %3$s</string>
     <string name="beer_image">beer image</string>
+    <string name="beat_details_text">Bear Details</string>
 </resources>
